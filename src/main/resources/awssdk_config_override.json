@@ -1,9 +1,21 @@
 {
     // AWS http client internal configuration.
+    "serviceSigners" : [ {
+        "key" : "eudisco",
+        "config" : {
+            "signerType" : "NoOpSignerType"
+        }
+    } ],
+    // AWS http client internal configuration.
     "httpClients" : [ {
         "key" : "YouConfigClient",
         "config" : {
             "serviceName" : "euconfig"
+        }
+    }, {
+        "key" : "YouDiscoClient",
+        "config" : {
+            "serviceName" : "eudisco"
         }
     }, {
         "key" : "YouPropClient",
